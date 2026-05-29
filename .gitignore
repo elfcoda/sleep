@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+bower_components/
+
+# Build output
+dist/
+build/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache
+.cache/
+*.tsbuildinfo
+
+# Audio / large assets (uncomment if needed)
+# assets/audio/*.mp3
+# assets/audio/*.wav
+
+# OpenSpec archive (keep active changes)
+# openspec/changes/archive/
+
+# System
+*.tmp
+*.temp
