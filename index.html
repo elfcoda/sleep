@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>情绪解压 - 心情舒缓</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="phone-frame">
+    <!-- Notch -->
+    <div class="phone-notch"></div>
+
+    <!-- Screen area -->
+    <div class="phone-screen" id="phoneScreen">
+      <!-- Music player toggle -->
+      <div class="music-toggle" id="musicToggle" title="音乐播放器">♪</div>
+
+      <!-- Music player panel (hidden by default) -->
+      <div class="music-panel" id="musicPanel">
+        <div class="music-panel-header">
+          <span>🎵 舒缓音乐</span>
+          <button class="music-panel-close" id="musicPanelClose">✕</button>
+        </div>
+        <button class="music-btn-play" id="musicPlayBtn">▶ 播放</button>
+        <div class="music-track-list" id="musicTrackList"></div>
+        <div class="music-volume">
+          <span>🔈</span>
+          <input type="range" id="musicVolume" min="0" max="100" value="50">
+          <span>🔊</span>
+        </div>
+        <div class="music-volume">
+          <span>🔉 音效</span>
+          <input type="range" id="sfxVolume" min="0" max="100" value="70">
+        </div>
+      </div>
+
+      <!-- Scene canvas container -->
+      <div class="scene-container" id="sceneContainer"></div>
+
+      <!-- Bottom tab bar -->
+      <nav class="tab-bar" id="tabBar">
+        <button class="tab-btn active" data-scene="welcome">
+          <span class="tab-icon">🏠</span>
+          <span class="tab-label">首页</span>
+        </button>
+        <button class="tab-btn" data-scene="cloud-tear">
+          <span class="tab-icon">☁️</span>
+          <span class="tab-label">撕云</span>
+        </button>
+        <button class="tab-btn" data-scene="bubble-pop">
+          <span class="tab-icon">🫧</span>
+          <span class="tab-label">捏泡泡</span>
+        </button>
+        <button class="tab-btn" data-scene="leaf-crush">
+          <span class="tab-icon">🍂</span>
+          <span class="tab-label">碎叶</span>
+        </button>
+        <button class="tab-btn" data-scene="sand-smooth">
+          <span class="tab-icon">🏖️</span>
+          <span class="tab-label">抚沙</span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Home indicator -->
+    <div class="phone-home-indicator"></div>
+  </div>
+
+  <script src="js/audio.js"></script>
+  <script src="js/scene-manager.js"></script>
+  <script src="js/scenes/welcome.js"></script>
+  <script src="js/scenes/cloud-tear.js"></script>
+  <script src="js/scenes/bubble-pop.js"></script>
+  <script src="js/scenes/leaf-crush.js"></script>
+  <script src="js/scenes/sand-smooth.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
